@@ -1,6 +1,7 @@
 # 🌌 Kelime Sarmalı (Türkçe Wordle)
 
-[**HEMEN OYNA (Canlı Demo)**](https://erendemir224.github.io/kelime-sarmali)
+[**HEMEN OYNA (Canlı Demo)**]([https://erendemir224.github.io/kelime-sarmali](https://erendemir224.github.io/kelime-sarmali/
+))
 
 **Kelime Sarmalı**, klasik Wordle deneyimini sıradanlıktan kurtaran, modern arayüzlü ve çift oyun modlu bir kelime tahmin oyunudur.
 
