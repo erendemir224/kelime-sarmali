@@ -332,7 +332,6 @@ const ANSWERS = [
 "ZUHUR", "ZULÜM", "ZURNA", "ZÜLÜF", "ZÜMRE", "ZÜPPE"
 ];
 
-// --- 2. TAHMİN HAVUZU (Sadece tahmin olarak kabul edilen nadir kelimeler - Örn: 10.000 adet) ---
 const VALID_GUESSES = [
 "ABACI", "ABADİ", "ABALI", "ABANA", "ABANİ", "ABAŞO", "ABAZA", "ABBAS", "ABDAL", "ABECE",
 "ABHAZ", "ABİDE", "ABİYE", "ABLAK", "ABONE", "ABOSA", "ABRAŞ", "ABULİ", "ACABA", "ACARA",
