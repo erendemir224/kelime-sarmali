@@ -18,6 +18,9 @@
 - **Kapsamlı Türkçe Sözlük:** 12.000+ kabul edilen tahmin kelimesi ve 2.500+ yaygın cevap kelimesi ile çift havuzlu sözlük sistemi.
 - **Sıfır Sunucu Maliyeti:** Oyun tamamen tarayıcının yerel hafızasını (Local Storage) kullanarak çalışır. Veritabanına veya backend'e ihtiyaç duymaz.
 
+📄 Lisans
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için LICENSE(https://github.com/erendemir224/kelime-sarmali/blob/main/LICENSE) dosyasına bakabilirsiniz.
+
 ## 🛠️ Kurulum ve Oynanış
 
 Projeyi kendi bilgisayarında çalıştırmak çok basittir:
