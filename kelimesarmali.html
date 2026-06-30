@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Kelime Sarmalı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">KELİME <span class="gradient-text">SARMALI</span></div>
+
+      <div class="info-bar" id="info-bar-container">
+        <button id="btn-hourly" class="mode-arrow" style="display: none">
+          <span>⮜</span> SAATLİK
+        </button>
+
+        <div id="mode-display" class="info-text">
+          YENİ KELİMEYE: <span id="ui-timer" class="highlight">--:--</span>
+        </div>
+
+        <button id="btn-endless" class="mode-arrow">
+          MARATON <span>➤</span>
+        </button>
+      </div>
+    </header>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <main>
+      <div id="board" class="board"></div>
+    </main>
+
+    <div id="keyboard" class="keyboard">
+      <div class="key-row">
+        <button class="key" data-key="E">E</button
+        ><button class="key" data-key="R">R</button
+        ><button class="key" data-key="T">T</button
+        ><button class="key" data-key="Y">Y</button
+        ><button class="key" data-key="U">U</button
+        ><button class="key" data-key="I">I</button
+        ><button class="key" data-key="O">O</button
+        ><button class="key" data-key="P">P</button
+        ><button class="key" data-key="Ğ">Ğ</button
+        ><button class="key" data-key="Ü">Ü</button>
+      </div>
+      <div class="key-row">
+        <button class="key" data-key="A">A</button
+        ><button class="key" data-key="S">S</button
+        ><button class="key" data-key="D">D</button
+        ><button class="key" data-key="F">F</button
+        ><button class="key" data-key="G">G</button
+        ><button class="key" data-key="H">H</button
+        ><button class="key" data-key="J">J</button
+        ><button class="key" data-key="K">K</button
+        ><button class="key" data-key="L">L</button
+        ><button class="key" data-key="Ş">Ş</button
+        ><button class="key" data-key="İ">İ</button>
+      </div>
+      <div class="key-row">
+        <button class="key large" data-key="ENTER">GİR</button>
+        <button class="key" data-key="Z">Z</button
+        ><button class="key" data-key="C">C</button
+        ><button class="key" data-key="V">V</button
+        ><button class="key" data-key="B">B</button
+        ><button class="key" data-key="N">N</button
+        ><button class="key" data-key="M">M</button
+        ><button class="key" data-key="Ö">Ö</button
+        ><button class="key" data-key="Ç">Ç</button>
+        <button class="key large" data-key="BACKSPACE">
+          <svg
+            width="20"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+            <line x1="18" y1="9" x2="12" y2="15"></line>
+            <line x1="12" y1="9" x2="18" y2="15"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="kelimeler.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
