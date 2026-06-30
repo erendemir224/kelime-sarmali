@@ -23,5 +23,5 @@
 Projeyi kendi bilgisayarında çalıştırmak çok basittir:
 
 1. Projeyi klonlayın veya indirin.
-2. `kelimesarmali.html`, `style.css`, `script.js` ve `kelimeler.js` dosyalarının aynı klasörde olduğundan emin olun.
-3. Sadece `kelimesarmali.html` dosyasına çift tıklayarak tarayıcınızda açın ve oynamaya başlayın!
+2. `index.html`, `style.css`, `script.js` ve `kelimeler.js` dosyalarının aynı klasörde olduğundan emin olun.
+3. Sadece `index.html` dosyasına çift tıklayarak tarayıcınızda açın ve oynamaya başlayın!
