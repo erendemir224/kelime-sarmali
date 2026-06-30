@@ -1,4 +1,3 @@
-// --- 1. CEVAP HAVUZU (Oyunun soracağı popüler kelimeler - Örn: 2500 adet) ---
 const ANSWERS = [
 "ACABA", "ACELE", "ACEMİ", "ACILI", "ACIMA", "AÇGÖZ", "AÇLIK", "AÇMAK", "AÇMAZ", "ADALE",
 "ADALI", "ADAMI", "ADANA", "ADETA", "ADINA", "ADRES", "ADSIZ", "AFGAN", "AFYON", "AĞAÇLI",
@@ -904,6 +903,4 @@ const VALID_GUESSES = [
 "ZÜHAL", "ZÜHRE", "ZÜHUL", "ZÜKAM", "ZÜLAL", "ZÜLÜF", "ZÜMRE", "ZÜPPE", "ZÜRRA", "ZÜYUF",
 "ZAHME", "ZONAL"
 ];
-
-// Oyun motoru için iki listeyi birleştiriyoruz
 const ALL_WORDS = [...ANSWERS, ...VALID_GUESSES];
