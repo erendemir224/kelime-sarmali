@@ -19,7 +19,7 @@
 - **Sıfır Sunucu Maliyeti:** Oyun tamamen tarayıcının yerel hafızasını (Local Storage) kullanarak çalışır. Veritabanına veya backend'e ihtiyaç duymaz.
 
 📄 Lisans
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için LICENSE(https://github.com/erendemir224/kelime-sarmali/blob/main/LICENSE) dosyasına bakabilirsiniz.
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](https://github.com/erendemir224/kelime-sarmali/blob/main/LICENSE) dosyasına bakabilirsiniz.
 
 ## 🛠️ Kurulum ve Oynanış
 
