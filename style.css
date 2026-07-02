@@ -10,7 +10,9 @@
     --correct-bg: #059669; 
     --present-bg: #d97706; 
     --absent-bg: #13101f;  
-    --box-size: 60px; 
+    
+    /* MASAÜSTÜ: Kutular 60px'den 54px'e küçültüldü */
+    --box-size: 54px; 
     --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
@@ -69,7 +71,7 @@ main {
     width: var(--box-size); height: var(--box-size); 
     background: var(--tile-bg); border: 2px solid var(--border-color); border-radius: 10px; 
     display: flex; justify-content: center; align-items: center; 
-    font-size: 2.1rem; font-weight: 900; text-transform: uppercase; transition: all 0.1s; 
+    font-size: 2rem; font-weight: 900; text-transform: uppercase; transition: all 0.1s; 
 }
 .tile:not(:empty) { border-color: var(--border-active); background: transparent; }
 
@@ -81,11 +83,13 @@ main {
 
 .key { 
     background-color: var(--key-bg); border: none; border-radius: 6px; 
-    height: 48px; flex: 1; font-size: 1rem; font-weight: bold; cursor: pointer; color: var(--text-color); 
+    /* MASAÜSTÜ: Klavye yüksekliği ve fontu biraz büyütüldü */
+    height: 52px; flex: 1; font-size: 1.1rem; font-weight: bold; cursor: pointer; color: var(--text-color); 
     display: flex; justify-content: center; align-items: center; user-select: none; 
-    box-shadow: 0 4px 0 var(--key-shadow); margin-bottom: 4px; transition: 0.05s; touch-action: manipulation; 
+    box-shadow: 0 4px 0 var(--key-shadow); margin-bottom: 4px; transition: 0.05s; 
+    touch-action: manipulation; 
 }
-.key.large { flex: 1.4; font-size: 0.8rem; }
+.key.large { flex: 1.4; font-size: 0.85rem; }
 .key:active { transform: translateY(4px); box-shadow: 0 0 0 transparent; margin-bottom: 0; margin-top: 4px; }
 
 .correct { background-color: var(--correct-bg) !important; color: white !important; border-color: var(--correct-bg) !important; box-shadow: none !important;}
@@ -104,9 +108,13 @@ main {
 .tile.flip-in { animation: flipIn 0.25s ease-in forwards; }
 .tile.flip-out { animation: flipOut 0.2s ease-out forwards; }
 
+/* MOBİL TASARIM (Özel olarak ayarlandı) */
 @media (max-width: 500px) {
-    :root { --box-size: 15.5vw; }
-    .key { height: 45px; font-size: 0.9rem; }
-    .key.large { font-size: 0.75rem; }
+    /* MOBİL: Kutular 15.5vw'den 13.5vw'ye düşürüldü */
+    :root { --box-size: 13.5vw; }
+    
+    /* MOBİL: Tuşlar daha büyük ve basması kolay (45px'den 52px'e çıktı) */
+    .key { height: 52px; font-size: 1.05rem; }
+    .key.large { font-size: 0.85rem; }
     .logo { font-size: 20px; }
 }
