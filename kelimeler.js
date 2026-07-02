@@ -88,7 +88,7 @@ const ANSWERS = [
 "FASON", "FATİH", "FAYDA", "FAZIL", "FAZLA", "FEDAİ", "FELAH", "FELEK", "FENCİ", "FENER",
 "FENNİ", "FERAĞ", "FERAH", "FERDİ", "FESAT", "FETİH", "FEVRİ", "FEYİZ", "FIKRA", "FIRÇA",
 "FIRIN", "FIŞKI", "FITIK", "FİBER", "FİDAN", "FİGAN", "FİGÜR", "FİİLİ", "FİKİR", "FİKRİ",
-"FİLAN", "FİLET", "FİLİZ", "FİNAL", "FİRAR", "GAFİL", "GALİP", "GALON", "KURAN",
+"FİLAN", "FİLET", "FİLİZ", "FİNAL", "FİRAR", "GAFİL", "GALİP", "GALON",
 "GALOŞ", "GAMZE", "GARAJ", "GARİP", "GAVUR", "GAYDA", "GAYET", "GAYRİ", "GAZAP", "GAZEL",
 "GAZLI", "GAZOZ", "GEBEŞ", "GEÇEK", "GEÇEN", "GEÇER", "GEÇİM", "GEÇİŞ", "GEÇİT", "GEÇME",
 "GEDİK", "GELEN", "GELİN", "GELİR", "GELİŞ", "GELME", "GENEL", "GENİŞ","DÜBEL","DÜDEN","DÜDÜK",
