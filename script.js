@@ -4,6 +4,47 @@ let state = {
     endless: { board: Array(6).fill('').map(() => Array(5).fill('')), colors: Array(6).fill('').map(() => Array(5).fill('')), currentRow: 0, currentCol: 0, status: 'IN_PROGRESS', word: '', history: [], score: 0, streak: 0 }
 };
 
+// --- YENİ: HİSSİYAT VE SES MOTORU ---
+let audioCtx;
+function playFeedback(key) {
+    // 1. TİTREŞİM (Sadece destekleyen telefonlarda çalışır, muazzam bir dokunma hissi verir)
+    if (navigator.vibrate) {
+        if (key === 'BACKSPACE') navigator.vibrate(20); // Silmede daha tok bir his
+        else if (key === 'ENTER') navigator.vibrate([15, 30, 15]); // Enter'da çift tık hissi
+        else navigator.vibrate(10); // Normal harfte hafif ve şık bir his
+    }
+
+    // 2. SES (MP3 dosyasına gerek duymadan kodla mekanik klavye sesi üretir)
+    try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        
+        if (key === 'BACKSPACE') {
+            osc.frequency.setValueAtTime(150, audioCtx.currentTime); // Silerken tok ses
+            gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        } else if (key === 'ENTER') {
+            osc.frequency.setValueAtTime(400, audioCtx.currentTime); // Enter'da ince/onay sesi
+            gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        } else {
+            osc.frequency.setValueAtTime(300, audioCtx.currentTime); // Standart harf sesi
+            gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+        }
+        
+        osc.type = 'sine';
+        osc.start();
+        gain.gain.exponentialRampToValueAtTime(0.00001, audioCtx.currentTime + 0.05); // 0.05 saniyelik çok kısa, çıt sesi
+        osc.stop(audioCtx.currentTime + 0.05);
+    } catch (e) {
+        // Eski tarayıcılarda ses desteklenmiyorsa oyunu çökertmemek için boş bırakıyoruz
+    }
+}
+// ------------------------------------
+
 function init() {
     if (typeof ANSWERS === 'undefined' || typeof ALL_WORDS === 'undefined') {
         window.ANSWERS = ["SİMGE"]; window.ALL_WORDS = ["SİMGE", "KALEM"];
@@ -192,6 +233,9 @@ function handleInput(key) {
         }
         return;
     }
+
+    // YENİ: Harfe basıldığı an hissiyat motoru çalışır
+    playFeedback(key);
 
     if (key === 'BACKSPACE') {
         if (currentData.currentCol > 0) {
