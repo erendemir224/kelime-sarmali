@@ -83,7 +83,7 @@ main {
     background-color: var(--key-bg); border: none; border-radius: 6px; 
     height: 48px; flex: 1; font-size: 1rem; font-weight: bold; cursor: pointer; color: var(--text-color); 
     display: flex; justify-content: center; align-items: center; user-select: none; 
-    box-shadow: 0 4px 0 var(--key-shadow); margin-bottom: 4px; transition: 0.05s; 
+    box-shadow: 0 4px 0 var(--key-shadow); margin-bottom: 4px; transition: 0.05s; touch-action: manipulation; 
 }
 .key.large { flex: 1.4; font-size: 0.8rem; }
 .key:active { transform: translateY(4px); box-shadow: 0 0 0 transparent; margin-bottom: 0; margin-top: 4px; }
