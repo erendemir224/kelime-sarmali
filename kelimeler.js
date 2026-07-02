@@ -1,8 +1,8 @@
 const ANSWERS = [
-"ACABA", "ACELE", "ACEMİ", "ACILI", "ACIMA", "AÇGÖZ", "AÇLIK", "AÇMAK", "AÇMAZ", "ADALE",
-"ADALI", "ADAMI", "ADANA", "ADETA", "ADINA", "ADRES", "ADSIZ", "AFGAN", "AFYON", "AĞAÇLI",
+"ACABA", "ACELE", "ACEMİ", "ACILI", "AÇGÖZ", "AÇLIK", "AÇMAK", "ADALE",
+ "ADANA", "ADETA","ADRES", "ADSIZ", "AFYON",
 "AHALİ", "AHBAP", "AHENK", "AHLAK", "AHMAK", "AHŞAP", "AİDAT", "AJANS", "AKBAŞ", "AKICI",
-"AKKOR", "AKLIK", "AKMAK", "AKRAN", "AKREP", "AKSAK", "AKSAM", "AKSAN", "AKŞAM", "AKTAR",
+"AKKOR","AKRAN", "AKREP", "AKSAK", "AKSAM", "AKSAN", "AKŞAM", "AKTAR",
 "AKTİF", "AKTÖR", "ALACA", "ALAKA", "ALARM", "ALBAY", "ALBÜM", "ALÇAK", "ALENİ", "ALEVİ",
 "ALICI", "ALKIŞ", "ALKOL", "ALLAH", "ALMAK", "ALMAN", "ALTIN", "AMBAR", "AMELE", "AMELİ",
 "AMİGO", "AMPER", "AMPUL", "ANALI", "ANCAK", "ANEMİ", "ANKET", "ANLAM", "ANLIK", "ANMAK",
@@ -88,7 +88,7 @@ const ANSWERS = [
 "FASON", "FATİH", "FAYDA", "FAZIL", "FAZLA", "FEDAİ", "FELAH", "FELEK", "FENCİ", "FENER",
 "FENNİ", "FERAĞ", "FERAH", "FERDİ", "FESAT", "FETİH", "FEVRİ", "FEYİZ", "FIKRA", "FIRÇA",
 "FIRIN", "FIŞKI", "FITIK", "FİBER", "FİDAN", "FİGAN", "FİGÜR", "FİİLİ", "FİKİR", "FİKRİ",
-"FİLAN", "FİLET", "FİLİZ", "FİNAL", "FİRAR", "GAFİL", "GALİP", "GALON",
+"FİLAN", "FİLET", "FİLİZ", "FİNAL", "FİRAR", "GAFİL", "GALİP", "GALON", "KURAN",
 "GALOŞ", "GAMZE", "GARAJ", "GARİP", "GAVUR", "GAYDA", "GAYET", "GAYRİ", "GAZAP", "GAZEL",
 "GAZLI", "GAZOZ", "GEBEŞ", "GEÇEK", "GEÇEN", "GEÇER", "GEÇİM", "GEÇİŞ", "GEÇİT", "GEÇME",
 "GEDİK", "GELEN", "GELİN", "GELİR", "GELİŞ", "GELME", "GENEL", "GENİŞ","DÜBEL","DÜDEN","DÜDÜK",
@@ -900,6 +900,6 @@ const VALID_GUESSES = [
 "ZİHNİ", "ZİKİR", "ZİLLİ", "ZİMMİ", "ZİNDE", "ZİRAİ", "ZİRVE", "ZİYAN", "ZLOTİ", "ZOMBİ",
 "ZORBA", "ZORCA", "ZORGU", "ZORLA", "ZORLU", "ZORUN", "ZUHUR", "ZULÜM", "ZURNA", "ZÜBDE",
 "ZÜHAL", "ZÜHRE", "ZÜHUL", "ZÜKAM", "ZÜLAL", "ZÜLÜF", "ZÜMRE", "ZÜPPE", "ZÜRRA", "ZÜYUF",
-"ZAHME", "ZONAL"
+"ZAHME", "ZONAL", "KURAN"
 ];
 const ALL_WORDS = [...ANSWERS, ...VALID_GUESSES];
